@@ -228,7 +228,7 @@
     payload = {
       rows: {
         item: function(i) {
-          return rows[i];
+          return i < 0 ? rows[rows.length + i] : rows[i];
         },
         length: rows.length
       },
