@@ -230,6 +230,7 @@
         item: function(i) {
           return i < 0 ? rows[rows.length + i] : rows[i];
         },
+          all : rows,
         length: rows.length
       },
       rowsAffected: response.rowsAffected || 0,
